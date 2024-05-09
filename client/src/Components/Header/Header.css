@@ -1,0 +1,18 @@
+.nShow{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+
+.show{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.nNav{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+}
+.nav{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
