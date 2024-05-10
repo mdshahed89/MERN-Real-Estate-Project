@@ -5,12 +5,13 @@ import userRouter from "./routes/user.route.js"
 import authRouter from "./routes/auth.route.js"
 import cookieParser from "cookie-parser";
 import listRouter from "./routes/listing.route.js"
-
+import cors from "cors"
 
 
 dotenv.config()
 const app = express();
 
+app.use(cors({ credentials: true, origin: "https://extraordinary-crisp-f864c9.netlify.app" }))
 app.use(express.json())
 app.use(cookieParser())
 
