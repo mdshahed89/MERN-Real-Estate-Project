@@ -38,6 +38,7 @@ function FeatureCard({listing}) {
   const listingCreatedDay = listingCreatedDate.getDate()
   
 //   console.log(listingCreatedDay);
+console.log(user);
 
 
 

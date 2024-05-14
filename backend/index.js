@@ -11,7 +11,7 @@ import cors from "cors"
 dotenv.config()
 const app = express();
 
-app.use(cors({ credentials: true, origin: "https://extraordinary-crisp-f864c9.netlify.app" }))
+app.use(cors({ credentials: true, origin: "http://localhost:5173" }))
 app.use(express.json())
 app.use(cookieParser())
 
@@ -20,6 +20,12 @@ mongoose.connect("mongodb+srv://RealEstate:RealEstate@realestate.n8dpbzv.mongodb
     console.log("Database connected seccessfully");
 }).catch((err)=>{
     console.log(err);
+})
+
+app.get("/", (req, res)=> {
+    res.send({
+        message: "Server is running"
+    })
 })
 
 app.listen(4000, ()=>{
